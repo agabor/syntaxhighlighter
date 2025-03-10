@@ -161,6 +161,7 @@ class SyntaxHighlighter {
 		wp_register_script( 'syntaxhighlighter-brush-fsharp',     plugins_url( 'third-party-brushes/shBrushFSharp.js',            __FILE__ ), array( 'syntaxhighlighter-core' ), '20091003'     );
 		wp_register_script( 'syntaxhighlighter-brush-latex',      plugins_url( 'third-party-brushes/shBrushLatex.js',             __FILE__ ), array( 'syntaxhighlighter-core' ), '20090613'     );
 		wp_register_script( 'syntaxhighlighter-brush-matlabkey',  plugins_url( 'third-party-brushes/shBrushMatlabKey.js',         __FILE__ ), array( 'syntaxhighlighter-core' ), '20091209'     );
+		wp_register_script( 'syntaxhighlighter-brush-nginx',      plugins_url( 'third-party-brushes/shBrushNginx.js',             __FILE__ ), array( 'syntaxhighlighter-core' ), '20250310'     );
 		wp_register_script( 'syntaxhighlighter-brush-objc',       plugins_url( 'third-party-brushes/shBrushObjC.js',              __FILE__ ), array( 'syntaxhighlighter-core' ), '20091207'     );
 		wp_register_script( 'syntaxhighlighter-brush-r',          plugins_url( 'third-party-brushes/shBrushR.js',                 __FILE__ ), array( 'syntaxhighlighter-core' ), '20100919'     );
 
@@ -215,6 +216,7 @@ class SyntaxHighlighter {
 			'tex'           => 'latex',
 			'matlab'        => 'matlabkey',
 			'matlabkey'     => 'matlabkey',
+			'nginx'         => 'nginx',
 			'objc'          => 'objc',
 			'obj-c'         => 'objc',
 			'perl'          => 'perl',
@@ -267,6 +269,7 @@ class SyntaxHighlighter {
 			'jscript'    => __( 'JavaScript',                'syntaxhighlighter' ),
 			'latex'      => __( 'LaTeX',                     'syntaxhighlighter' ),
 			'matlabkey'  => __( 'MATLAB',                    'syntaxhighlighter' ),
+			'nginx'      => __( 'NGINX',                     'syntaxhighlighter' ),
 			'objc'       => __( 'Objective-C',               'syntaxhighlighter' ),
 			'perl'       => __( 'Perl',                      'syntaxhighlighter' ),
 			'php'        => __( 'PHP',                       'syntaxhighlighter' ),
