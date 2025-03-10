@@ -1,13 +1,8 @@
 SyntaxHighlighter.brushes.Nginx = function()
 {
-	// Main nginx directives and blocks extracted from the Notepad++ definition
-	var mainDirectives = 'http server events location include';
+	var mainDirectives = 'http server events location include if map';
 	
-	// Directive keywords extracted from the Notepad++ definition
-	var directives = 'listen server_name root index try_files fastcgi_pass deny expires log_not_found';
-	
-	// Variables extracted from the Notepad++ definition
-	var variables = '$ CONTENT_ DOCUMENT_ GATEWAY_ HTTP_ HTTPS';
+	var directives = 'listen server_name root index try_files deny expires set return add_header client_max_body_size';
 
 	this.regexList = [
 		// Comments
@@ -24,14 +19,15 @@ SyntaxHighlighter.brushes.Nginx = function()
 		{ regex: new RegExp(this.getKeywords(directives), 'gm'),    css: 'functions' },
 		
 		// Variables
-		//{ regex: new RegExp(this.getKeywords(variables), 'gm'),     css: 'variable' },
+		{ regex: /\$[a-z0-9_]+/g,                                    css: 'variable' },
+
+		{ regex: /fastcgi_[a-z_]+/g,                                css: 'functions'},
 		
-		// Braces, semicolons
 		{ regex: /[\{\}]/g,                                         css: 'color1' },
 		{ regex: /;/g,                                              css: 'color1' },
 		
-		// Regular expressions and locations
-		{ regex: /~\*?\s[^{]+/g,                                       css: 'regex' }
+		{ regex: /~\*?\s[^{"]+/g,                                   css: 'regex' },
+		{ regex: /~\*?\s"[^{"]+"/g,                                 css: 'regex' }
 	];
 };
 
