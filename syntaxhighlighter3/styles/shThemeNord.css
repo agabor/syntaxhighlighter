@@ -1,0 +1,124 @@
+/**
+ * SyntaxHighlighter Nord Theme
+ * https://www.nordtheme.com/
+ */
+.syntaxhighlighter {
+  background-color: #2e3440 !important;
+}
+
+.syntaxhighlighter .line.alt1,
+.syntaxhighlighter .line.alt2 {
+  background-color: #2e3440 !important;
+}
+
+/* Line numbers */
+.syntaxhighlighter .line .number {
+  color: #4c566a !important;
+}
+
+/* Plain text */
+.syntaxhighlighter .line .content {
+  border-left: 1px solid #3b4252 !important;
+}
+.syntaxhighlighter .line.highlighted .number,
+.syntaxhighlighter .line.highlighted.alt1 .content,
+.syntaxhighlighter .line.highlighted.alt2 .content {
+  background-color: #434c5e !important;
+}
+
+/* Main code */
+.syntaxhighlighter .plain,
+.syntaxhighlighter .plain a {
+  color: #d8dee9 !important;
+}
+
+/* Comments */
+.syntaxhighlighter .comments,
+.syntaxhighlighter .comments a {
+  color: #616e88 !important;
+  font-style: italic !important;
+}
+
+/* Strings */
+.syntaxhighlighter .string,
+.syntaxhighlighter .string a {
+  color: #a3be8c !important;
+}
+
+/* Keywords */
+.syntaxhighlighter .keyword {
+  color: #81a1c1 !important;
+  font-weight: bold !important;
+}
+
+/* Color for preprocessor and operators */
+.syntaxhighlighter .preprocessor {
+  color: #5e81ac !important;
+}
+
+/* Variables */
+.syntaxhighlighter .variable {
+  color: #d8dee9 !important;
+}
+
+/* Functions */
+.syntaxhighlighter .functions {
+  color: #88c0d0 !important;
+}
+
+/* Constants */
+.syntaxhighlighter .constants {
+  color: #81a1c1 !important;
+}
+
+/* Types/Classes */
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a {
+  color: #8fbcbb !important;
+}
+
+/* Numbers */
+.syntaxhighlighter .value {
+  color: #b48ead !important;
+}
+
+/* Gutter toolbar */
+.syntaxhighlighter .toolbar {
+  background-color: #2e3440 !important;
+  border: none !important;
+}
+
+.syntaxhighlighter .toolbar a {
+  color: #d8dee9 !important;
+}
+
+.syntaxhighlighter .toolbar a:hover {
+  color: #88c0d0 !important;
+}
+
+/* Add some spacing and borders */
+.syntaxhighlighter {
+  padding: 1em 0 1em 0 !important;
+  border: 1px solid #3b4252 !important;
+}
+
+/* Selected line highlight */
+.syntaxhighlighter .line.highlighted.alt1,
+.syntaxhighlighter .line.highlighted.alt2 {
+  background-color: #434c5e !important;
+}
+
+/* Gutter line numbers */
+.syntaxhighlighter .gutter {
+  background-color: #2e3440 !important;
+  border-right: 1px solid #3b4252 !important;
+}
+
+.syntaxhighlighter .gutter .line {
+  border: none !important;
+}
+
+/* Line highlight */
+.syntaxhighlighter .line.highlighted {
+  background-color: #434c5e !important;
+}
