@@ -31,7 +31,7 @@ SyntaxHighlighter.brushes.Nginx = function()
 		{ regex: /;/g,                                              css: 'color1' },
 		
 		// Regular expressions and locations
-		{ regex: /~\*?\s[^{]+/g,                                       css: 'plain' }
+		{ regex: /~\*?\s[^{]+/g,                                       css: 'regex' }
 	];
 };
 
