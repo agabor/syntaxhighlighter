@@ -20,13 +20,12 @@ SyntaxHighlighter.brushes.Nginx = function()
 		
 		// Variables
 		{ regex: /\$[a-z0-9_]+/g,                                    css: 'variable' },
-		{ regex: /[0-9]+[GMKksm]?/g,                                 css: 'value' },
+		{ regex: /[0-9]+[GMKSgmks]?/g,                                 css: 'value' },
 		{ regex: /\s(POST|GET)\s/g,                                  css: 'value' },
 
 		{ regex: /fastcgi_[a-z_]+/g,                                 css: 'functions'},
 		
-		{ regex: /[\{\}\(\)\[\]]/g,                                  css: 'color1' },
-		{ regex: /;/g,                                               css: 'color1' },
+		{ regex: /[\{\}\(\)\[\];]/g,                                  css: 'color1' },
 		
 		{ regex: /~\*?\s(\([^{"()]+\)|[^{"()]+)+/g,                  css: 'regex' },
 		{ regex: /~\*?\s"(\([^{"()]+\)|[^{"()]+)+"/g,                css: 'regex' }
