@@ -13,7 +13,7 @@
 
 /* Line numbers */
 .syntaxhighlighter .line .number {
-  color: #4c566a !important;
+  color: #d8dee9 !important;
 }
 
 /* Plain text */
@@ -121,11 +121,11 @@
 
 .syntaxhighlighter .gutter .line {
   border: none !important;
-  color: #d8dee9 !important;
+  color: #4c566a !important;
 }
 
 .syntaxhighlighter table caption {
-  color: #d8dee9 !important;
+  color: #4c566a !important;
 }
 
 /* Line highlight */
