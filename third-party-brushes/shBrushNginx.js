@@ -26,8 +26,8 @@ SyntaxHighlighter.brushes.Nginx = function()
 		{ regex: /[\{\}]/g,                                         css: 'color1' },
 		{ regex: /;/g,                                              css: 'color1' },
 		
-		{ regex: /~\*?\s[^{"]+/g,                                   css: 'regex' },
-		{ regex: /~\*?\s"[^{"]+"/g,                                 css: 'regex' }
+		{ regex: /~\*?\s(\([^{"()]+\)|[^{"()]+)+/g,                 css: 'regex' },
+		{ regex: /~\*?\s"(\([^{"()]+\)|[^{"()]+)+"/g,               css: 'regex' }
 	];
 };
 
