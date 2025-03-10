@@ -48,13 +48,12 @@
 /* Regex */
 .syntaxhighlighter .regex,
 .syntaxhighlighter .regex a {
-  color: #a3be8c !important;
+  color: #ebcb8b !important;
 }
 
 /* Keywords */
 .syntaxhighlighter .keyword {
   color: #81a1c1 !important;
-  font-weight: bold !important;
 }
 
 /* Color for preprocessor and operators */
@@ -64,12 +63,12 @@
 
 /* Variables */
 .syntaxhighlighter .variable {
-  color: #ebcb8b !important;
+  color: #d8dee9 !important;
 }
 
 /* Functions */
 .syntaxhighlighter .functions {
-  color: #88c0d0 !important;
+  color: #81a1c1 !important;
 }
 
 /* Constants */

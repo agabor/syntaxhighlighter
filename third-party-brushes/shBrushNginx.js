@@ -2,7 +2,7 @@ SyntaxHighlighter.brushes.Nginx = function()
 {
 	var mainDirectives = /(^|\s)(http|server|events|location|include|if|map)\s/g;
 	
-	var directives = /\s(listen|server_name|root|index|try_files|deny|expires|set|return|add_header|client_max_body_size|default)\s/g;
+	var directives = /\s(listen|server_name|root|index|try_files|deny|expires|set|return|add_header|client_max_body_size)\s/g;
 
 	this.regexList = [
 		// Comments
@@ -25,7 +25,7 @@ SyntaxHighlighter.brushes.Nginx = function()
 
 		{ regex: /fastcgi_[a-z_]+/g,                                 css: 'functions'},
 		
-		{ regex: /[\{\}]/g,                                          css: 'color1' },
+		{ regex: /[\{\}\(\)\[\]]/g,                                  css: 'color1' },
 		{ regex: /;/g,                                               css: 'color1' },
 		
 		{ regex: /~\*?\s(\([^{"()]+\)|[^{"()]+)+/g,                  css: 'regex' },
